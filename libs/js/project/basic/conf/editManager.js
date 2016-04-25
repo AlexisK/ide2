@@ -1,0 +1,3 @@
+
+CONF.project.editManagerRules = {
+}

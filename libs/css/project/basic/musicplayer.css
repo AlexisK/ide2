@@ -1,0 +1,56 @@
+.musicplayer {
+    position: absolute;
+    top: 0px; right: 0px; bottom: 0px; left: 0px;
+}
+
+
+.musicplayer > * {
+    position: absolute;
+    right: 0px; left: 0px;
+}
+
+
+.musicplayer > .title {
+    top: 0px;
+    height: 40px;
+    padding: 10px 20px;
+    background-color:%greyDark;
+    color:%white;
+}
+.musicplayer > .controlls {
+    top: 40px;
+    height: 40px;
+}
+.musicplayer > .filelist {
+    top: 80px; bottom: 0px;
+    padding: 10px 20px;
+    background-color:%greyLight;
+    overflow: auto;
+}
+
+
+.musicplayer > .controlls > .asBtn {
+    width: 40px; height: 40px;
+    margin: 10px;
+}
+.musicplayer > .controlls > .asBtn svg { fill:%white; }
+
+
+
+
+
+
+
+
+
+
+
+.musicplayer > .filelist { display: none; }
+
+
+
+
+
+
+
+

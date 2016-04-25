@@ -1,0 +1,227 @@
+
+.jBool {
+    position: relative;
+    width: 38px; height: 20px;
+    border: 1px solid %red;
+    background-color: %red;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.jBool.readonly {
+    width: 20px;
+    border-radius: 0px;
+    cursor: default;
+    background-color: transparent;
+    border: 2px solid %bgBlack;
+}
+
+.jBool > div {
+    position: absolute;
+    top: 2px; left: 2px;
+    width: 14px; height: 14px;
+    background-color: %red3;
+    border: 0px solid %white;
+    border-radius: 10px;
+}
+
+.jBool.readonly > div {
+    opacity: 0;
+}
+
+.jBool.active {
+    background-color: %green;
+    border-color:%green;
+}
+
+.jBool.readonly.active {
+    background-color: transparent;
+    border: 2px solid %bgBlack;
+}
+
+.jBool.active > div {
+    top: 0px; left: 18px;
+    width: 18px; height: 18px;
+    background-color: %green2;
+}
+
+.jBool.readonly.active > div {
+    top: 2px; left: 2px;
+    width: 12px; height: 12px;
+    border-radius: 0px;
+    background-color:%bgBlack;
+    opacity: 1;
+}
+
+.jBool.inactive {
+    border: 1px solid %grey;
+    background-color: %greyLight;
+}
+
+.jBool.inactive > div {
+    left: 11px; top: 2px;
+    width: 14px; height: 14px;
+    background-color: %grey;
+}
+
+.jBool.readonly.inactive > div { left: 2px; }
+
+
+
+
+
+
+
+.jDropdown {
+    position: relative;
+    min-width: 200px; max-width: 100%; min-height: 26px;
+    border: 1px solid %greyLight;
+    cursor: pointer;
+    z-index:1;
+}
+.jDropdown.active,
+.jDropdown:hover {
+    border: 1px solid %greyDark;
+    z-index:2;
+}
+.jDropdown.active:hover { z-index:3; }
+.jDropdown > .jFilt {
+    position: absolute;
+    top: 0px; left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index:1;
+    background-color: transparent!important;
+    color:%black!important;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+}
+.jDropdown.active > .jFilt { cursor: text; }
+
+.jDropdown > .jHead {
+    min-height: 26px;
+    padding: 0px 5px;
+    line-height: 26px;
+    overflow: hidden;
+}
+.jDropdown > .jBody {
+    position: absolute;
+    top: 24px;left: 0px;
+    min-width: 100%;
+    z-index: 2;
+}
+.jDropdown.active > .jBody {
+    box-shadow: 0px 0px 5px %black;
+}
+.jDropdown > .jBody > div {
+    max-height: 0px;
+    padding: 0px;
+    background-color: %white;
+    border-bottom: 0px solid %greyLight;
+    color:%greyDark;
+    overflow: hidden;
+}
+.jDropdown.active > .jBody > div {
+    max-height: 200px;
+    padding: 3px 0px;
+    border-bottom: 1px solid %greyDark;
+}
+.jDropdown > .jBody > div:hover {
+    background-color:%greyDark;
+    color:%white;
+}
+.jDropdown .asBtn svg {
+    max-width: 40px; max-height: 40px;
+    margin: 5px 0px 0px 0px;
+}
+
+
+
+
+
+.jSwitch {
+    width: 100px; height: 22px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.jSwitch > div {
+    white-space: nowrap;
+}
+.jSwitch > div > * {
+    display: inline-block;
+    width: 100px; height: 22px; line-height: 22px;
+    text-align: center;
+    font-weight: bold;
+    background-color:%grey;
+    color:%white;
+}
+
+.jSwitch > div > *.black   { background-color:%black; }
+.jSwitch > div > *.green   { background-color:%green; }
+.jSwitch > div > *.red     { background-color:%red;   }
+.jSwitch > div > *.warning { background-color:%warning; }
+.jSwitch > div > *.blue    { background-color:%blue;  }
+
+
+
+
+
+
+
+
+.jvcstdb {
+    background-color: #ddd;
+    width: 160px;
+    height: 160px;
+    border-radius: 80px 80px 0px 80px;
+    border: 20px solid #666;
+    border-width: 10px 50px 50px 10px;
+    transform: rotate(45deg);
+    border-color: #666 #777 #888 #555;
+}
+
+
+
+
+
+
+.dateinput-def {}
+
+.dateinput-def > * { display: inline-block; }
+.dateinput-def .jDropdown { min-width: 40px; }
+
+
+
+
+
+.jTagline > .inp {
+    min-width: 1px;
+    min-height: 1.4em;
+    float: left;
+}
+.jTagline > .tagb {
+    position: relative;
+    display: block;
+    float: left;
+    padding-right: 1.4em;
+}
+.jTagline > .tagb > .cbtn {
+    position: absolute;
+    top: 0px; right: 0px; bottom: 0px;
+    width: 1.4em;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

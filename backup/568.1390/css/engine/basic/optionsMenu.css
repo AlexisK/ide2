@@ -1,0 +1,31 @@
+
+.jOptionsMenu {
+    position: fixed;
+    min-width: 80px; min-height: 40px;
+    background-color: %white;
+    box-shadow: 0px 0px 15px %black;
+    z-index: 500;
+}
+
+.jOptionsMenu > h5 {
+    padding: 10px;
+}
+
+
+.jOptionsMenu > div > div {
+    cursor: pointer;
+    padding: 5px 10px;
+}
+.jOptionsMenu > div > div:hover {
+    background-color:%blue;
+    color:%white;
+}
+//-.jOptionsMenu > div > div.flagInside:hover {
+//-    background-color:transparent;
+//-    color:inherit;
+//-    cursor: default;
+//-}
+.jOptionsMenu > div > div.flagInside > .jBool {
+    float: right;
+    margin-left: 10px;
+}

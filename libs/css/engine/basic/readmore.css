@@ -1,0 +1,4 @@
+.pr_readmore { overflow: hidden; }
+.pr_readmore + .rastr {
+    cursor: pointer;
+}

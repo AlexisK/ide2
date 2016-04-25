@@ -1,0 +1,82 @@
+.notify-area {
+    position: fixed;
+    right: 0px; bottom: 0px;
+    width: 0px;
+    z-index: 500;
+}
+
+
+.notify-area > .notify {
+    float: right;
+    width: 200px;
+    margin: 0px -1px -1px 0px;
+    padding: 5px 20px;
+    background-color:%bgGrey;
+    color:%black;
+    border: 1px solid %bgBlack3;
+    font-size: 14px;
+    opacity: 0.75;
+}
+.notify-area > .notify:last-child {
+    padding: 5px 20px;
+    opacity: 1.0;
+}
+
+.notify-area > .notify.closed {
+    margin-right: -220px;
+    padding: 0px 10px;
+}
+
+.notify-area > .notify.black {
+    background-color:%bgBlack2;
+    color:%white;
+}
+
+.notify-area > .notify.ok,
+.notify-area > .notify.green {
+    background-color:%green2;
+}
+
+.notify-area > .notify.fail,
+.notify-area > .notify.red {
+    background-color:%red3;
+}
+.notify-area > .notify.warning {
+    background-color:%warn;
+}
+
+.notify-area > .notify.center {
+    position: fixed;
+    top: 40%; right: 40px; left: 40px;
+    margin: auto;
+    width: 230px;
+    padding: 10px 20px;
+    border-width: 3px;
+    text-align: center;
+    font-weight: bold;
+    opacity: 1.0;
+    box-shadow: 0px 0px 0px %black;
+}
+
+.notify-area > .notify.center.closed {
+    opacity: 0.0;
+    box-shadow: 0px 0px 30px %black;
+}
+
+
+.notify > .opts {}
+.notify > .opts > .half { width: 50%; }
+.notify > .opts > .first { float: left; }
+.notify > .opts > .second { margin-left: 50%; }
+.notify > .opts > *:hover {
+    background-color:%white;
+    color:%black;
+}
+
+
+
+
+
+
+
+

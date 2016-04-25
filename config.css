@@ -1,0 +1,112 @@
+
+#def sizeHuge 1921px
+#def sizeTablet 1100px
+#def sizeMobile 750px
+#def sizeMobileMed 550px
+#def sizeMobileSmall 400px
+
+#def sizeFooter 160px
+
+#def sizeMenu 225px
+#def sizeMLine 40px
+#def sizeMCont 185px
+
+#def colMain #222
+#def colMainLight #aaa
+#def colDelim #222
+#def colDelim2 #333
+#def colDelim3 #555
+#def colDelimLight #aaa
+#def black #000
+#def white #fff
+#def white2 #fbfbfb
+#def green #5D9920
+#def green2 #B9E889
+#def red #a30
+#def red2 #f00
+#def red3 #E66832
+#def warn #E6A732
+#def blue #1469EB
+#def blue2 #B8CFF2
+#def grey #aaa
+#def greyDark #666
+#def greyLight #eee
+#def greyLight2 #f5f5f5
+
+#def orange #f7931e
+
+#def bgMain #eee
+#def bgHeader #f9f9f9
+#def bgWhite rgba(255,255,255,0.7)
+#def bgWhite2 rgba(255,255,255,0.8)
+#def bgWhite3 rgba(255,255,255,0.9)
+#def bgWhite4 rgba(255,255,255,0.95)
+#def bgBlack rgba(0,0,0,0.75)
+#def bgBlack2 rgba(0,0,0,0.5)
+#def bgBlack3 rgba(0,0,0,0.25)
+#def bgGrey rgba(238,238,238,0.85)
+#def bgGreyLight rgba(238,238,238,0.35)
+#def bgGrey2 rgba(245,245,245,0.85)
+
+#def fontMain arial, sans-serif
+
+#def full 100%
+#def wrapper 1415px
+#def wrapperS0 1900px
+#def wrapperS1 1600px
+#def wrapperS2 1400px
+#def wrapperS3 1200px
+#def wrapperS4 1000px
+#def wrapperS5 780px
+#def wrapperS6 680px
+#def wrapperS7 600px
+#def wrapperS8 400px
+
+
+#def menuWidth 225px
+#def menuCol1 40px
+#def menuCol2 185px
+
+
+#def pStatic /_static/01
+
+
+
+
+
+
+#include project/basic/fonts
+#include engine/basic/basic
+#include engine/basic/gallery
+#include engine/basic/crCustom
+#include engine/basic/optionsMenu
+#include engine/basic/wysiwyg
+#include engine/basic/statusText
+#include engine/basic/notify
+#include engine/basic/tabs
+#include engine/basic/fbshare
+
+#import project/basic
+
+#import engine/basic/calendar
+#import engine/basic/pop
+
+
+
+#write compiled
+
+
+#import engine/extend
+#import project/extend
+#import project/extend/tables
+#write extended
+
+
+
+
+
+
+
+
+
+

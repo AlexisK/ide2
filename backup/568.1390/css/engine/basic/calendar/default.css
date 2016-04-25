@@ -1,0 +1,166 @@
+.calendar-def .calendar {
+    position: relative;
+    width: 300px; height: 250px;
+}
+.calendar-def.small  .calendar { position: absolute; width: 270px; }
+
+
+
+
+
+.calendar-def.calendar-input {
+    position: relative;
+    width: 300px; height: 40px;
+}
+.calendar-def.small.calendar-input { width: 270px; height: 30px; }
+
+.calendar-def.calendar-input > .calendar-represent {
+    text-align: center;
+    cursor: pointer;
+}
+
+.calendar-def.calendar-input > .calendar { display: none; }
+.calendar-def.calendar-input.active > .calendar { display: block; z-index: 1; }
+
+
+
+
+
+
+.calendar-def.calendar-input > .calendar-represent,
+.calendar-def .calendar-head {
+    position: relative;
+    height: 40px;
+    background-color:%greyDark;
+    background-size: 10px 10px;
+}
+.calendar-def.small.calendar-input > .calendar-represent,
+.calendar-def.small .calendar-head { height: 30px; }
+
+.calendar-def .calendar-head .asBtn {
+    float: right;
+    width: 40px; height: 40px;
+    padding: 5px;
+}
+.calendar-def.small .calendar-head .asBtn { width: 30px; height: 30px; }
+
+.calendar-def .calendar-head .asBtn svg { fill:%white; }
+.calendar-def .calendar-head .asBtn:first-child { float: left; }
+
+.calendar-def.calendar-input > .calendar-represent,
+.calendar-def .calendar-head .month {
+    line-height: 40px;
+    color:%white;
+    text-transform: uppercase;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+.calendar-def .calendar-head .month { margin: 0px 40px; }
+
+.calendar-def.small.calendar-input > .calendar-represent,
+.calendar-def.small .calendar-head .month { line-height: 30px; font-size: 16px; }
+.calendar-def.small .calendar-head .month { margin: 0px 30px; }
+
+
+
+
+
+
+.calendar-def table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color:%white;
+}
+
+
+.calendar-def table td,
+.calendar-def table th {
+    text-align: center;
+    font-weight: bold;
+}
+
+.calendar-def table td {
+    height: 29px;
+    border: 1px solid %greyLight;
+    
+}
+
+
+.calendar-def table .wDay td {
+    background-color:%greyLight;
+    color:%grey;
+}
+
+.calendar-def table .cTime td {
+    cursor: pointer;
+    color:%grey;
+}
+
+.calendar-def table .cTime td:hover,
+.calendar-def table .cTime td.curDate {
+    background-color:%black;
+    border-color:%black;
+    color:%white;
+}
+
+
+.calendar-def table td.curMonth { color:%black; }
+
+
+
+.calendar-def .time-block {
+    background-color:%greyDark;
+    background-size: 10px 10px;
+    text-align: center;
+}
+.calendar-def .time-block > input {
+    width: 70px!important; max-width: 70px!important; height: 20px;
+    display: inline-block;
+    margin: 10px 0px;
+    border: none;
+    background:transparent;
+    border-bottom: 1px solid %grey;
+    color:%white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+.calendar-def .time-block > div {
+    display: inline-block;
+    height: 20px; line-height: 20px;
+    margin: 10px 5px;
+    font-weight: bold;
+    font-size: 18px;
+    color:%grey;
+}
+.calendar-def.small .time-block > div {
+    margin: 5px;
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

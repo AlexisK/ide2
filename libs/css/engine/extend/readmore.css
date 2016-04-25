@@ -1,0 +1,6 @@
+.pr_readmore + .rastr {
+    padding: 10px;
+    font-weight: bold;
+    color:%greyDark;
+    text-align: center;
+}

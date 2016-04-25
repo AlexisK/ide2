@@ -1,0 +1,41 @@
+.aman {
+    font-size: 0px;
+}
+@media (max-width:wrapperS7) {
+    .aman { display: none; }
+}
+
+.aman > .asBtn {
+    display: inline-block;
+    margin: 0px;
+    padding: 5px;
+    
+    background-color:%bgWhite;
+    color:%greyDark;
+    font-size: 14px;
+}
+
+.aman > .asBtn:hover,
+.aman > .asBtn.active {
+    background-color:%bgWhite4;
+    color:%black;
+}
+
+.aman > .asBtn svg,
+.aman > .asBtn svg { fill:%greyDark; }
+.aman > .asBtn:hover svg,
+.aman > .asBtn.active svg { fill:%black; }
+
+.aman > .asBtn > .svg {
+    float: left;
+    width: 20px;
+    height: 20px;
+}
+.aman > .asBtn > span {
+    margin: 0px 10px;
+}
+
+
+.aman .statusText > div.type_link { display: none; }
+.aman .statusText { box-shadow: none; }
+

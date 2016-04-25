@@ -1,0 +1,65 @@
+
+
+.df { position: relative; }
+.df > .head {
+    position: relative;
+    min-height: 20px;
+    cursor: pointer;
+}
+
+.df > .head:hover,
+.df > .head.active {
+    background-color:%white;
+}
+.df.currentMusicFile > .head {
+    background-color:%blue;
+    color:%white;
+}
+
+.df > .head > .logo {
+    width: 20px; height: 20px;
+    padding: 2px;
+    float: left;
+}
+.df > .head > .logo svg { fill:%grey; }
+
+
+
+
+.df > .head > .title {
+    padding-top: 3px;
+    line-height: 14px;
+}
+
+
+.df > .conts {
+    position: absolute;
+    top: 0px; right: 0px;
+}
+.df > .conts > .asBtn {
+    width: 20px; height: 20px;
+    float: left;
+    padding: 2px;
+}
+.df > .conts > .asBtn svg { fill:%green; }
+.df > .conts > .asBtn:hover svg { fill:%black; }
+
+
+.df > .cont {
+    padding: 0px 0px 10px 10px;
+}
+
+
+
+.df.engined > .head > .logo svg { fill:%blue; }
+.df.modified > .head > .logo svg { fill:%red; }
+.df.current > .head { background-color:%white; }
+
+
+
+
+
+
+
+
+

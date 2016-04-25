@@ -1,0 +1,101 @@
+
+.popWindow {
+    position: relative;
+    max-width:%wrapperS4;
+    margin: 50px auto;
+    padding: 20px 40px;
+    border-radius: 4px;
+    background-color:%greyLight2;
+    box-shadow: 0px 0px 14px %greyDark;
+}
+
+.popWindow > .closeBtn {
+    position: absolute;
+    top: 0px; right: 0px;
+    width: 40px; height: 40px;
+    padding: 10px;
+    border-radius: 0px 4px;
+}
+.popWindow > .closeBtn > svg { fill: %grey; }
+.popWindow > .closeBtn:hover { background-color:%greyDark; }
+.popWindow > .closeBtn:hover > svg { fill:%white; }
+
+
+.popWindow .content {
+    margin-top: 0px;
+    padding-bottom: 0px;
+}
+
+
+.popWindow .tabs.heading {
+    margin: -20px 0px 10px -40px;
+}
+
+
+
+.popWindow .tabs.heading .asBtn:hover,
+.popWindow .tabs.heading .asBtn.active { background-color:%greyDark; }
+
+.popWindow .tabs.heading .asBtn:hover svg,
+.popWindow .tabs.heading .asBtn.active svg { fill:%white; }
+.popWindow .tabs.heading .asBtn:hover .str,
+.popWindow .tabs.heading .asBtn.active .str { color:%white; }
+
+.popWindow .tabs.heading .asBtn {
+    width: 25%;
+    border-radius: 0px 0px 4px 4px;
+}
+.popWindow .tabs.heading .asBtn:first-child { border-radius: 4px 0px; }
+
+
+
+
+@media (max-width:%wrapperS4) {
+    .popWindow {
+        margin-bottom: 0px;
+        border-radius: 0px;
+    }
+}
+
+@media (max-width:%wrapperS5) {
+    .popWindow {
+        padding: 20px;
+    }
+    .popWindow .tabs.heading {
+        margin: -20px 20px 10px -20px;
+    }
+}
+
+
+@media (max-width:%wrapperS7) {
+    .popWindow {
+        padding: 30px 10px 20px 10px;
+    }
+    
+    .popWindow .tabs.heading {
+        margin: -30px 20px 10px -10px;
+    }
+    
+    .popWindow .tabs.heading .asBtn { width: auto; }
+    .popWindow .tabs.heading > .asBtn > .ico {
+        width: 30px;
+        height: 30px;
+        padding: 5px;
+    }
+    .popWindow .tabs.heading > .asBtn > .str {
+        height: 30px;
+        padding: 5px 10px;
+    }
+    .popWindow .tabs.heading > .asBtn > .ico + .str {
+        margin-left: 30px;
+        padding-left: 0px;
+    }
+    
+    .popWindow > .closeBtn {
+        width: 30px; height: 30px;
+        padding: 5px;
+    }
+}
+
+
+

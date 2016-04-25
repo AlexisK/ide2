@@ -1,0 +1,211 @@
+#def ormSidebar 20%
+
+.ormView {
+    position: fixed;
+    top: 0px; right: 0px; bottom: 0px; left: 40px;
+    
+    background-color:%white;
+    font-size: 12px;
+    line-height: 20px;
+    font-family: monospace;
+}
+
+
+.ormView > *,
+.ormView .orm-menu > * {
+    position: absolute;
+    box-sizing: border-box;
+}
+
+.ormView input {
+    border: none;
+    padding: 10px;
+}
+
+.ormView .orm-oid,
+.ormView .orm-list-filter,
+.ormView .orm-req,
+.ormView .orm-menu,
+.ormView .orm-menu > * {
+    height: 40px;
+}
+
+
+.ormView .orm-oid,
+.ormView .orm-list-filter,
+.ormView .orm-list {
+    left: 0px;
+    width:%ormSidebar;
+}
+
+.ormView .orm-req,
+.ormView .orm-menu { left:%ormSidebar; right: 0px; }//- right: %ormSidebar;
+.ormView .orm-cont {
+    left:%ormSidebar; right:0px;
+}
+
+.ormView .orm-oid,
+.ormView .orm-req { top: 0px; }
+.ormView .orm-list-filter,
+.ormView .orm-menu { top: 40px; }
+.ormView .orm-list,
+.ormView .orm-cont,
+.ormView .orm-hist { top: 80px; bottom: 0px; overflow: auto; }
+
+
+
+
+.ormView .orm-req {
+    width: calc(100% - %ormSidebar);
+}
+
+.ormView .orm-menu {
+    border-bottom: 1px solid %colDelim2;
+    overflow: hidden;
+}
+
+
+
+.ormView .orm-cont-filter {
+    left: 0px;
+    width: 150px;
+}
+
+.ormView .orm-menu > .asBtn {
+    left: 150px;
+    width: 100px; height: 30px;
+    margin-top: 10px;
+    line-height: 30px;
+    border-radius: 5px 5px 0px 0px;
+    background:%colDelim3;
+    color:%white;
+}
+.ormView .orm-menu > .asBtn:hover { background:%colDelim; }
+.ormView .orm-menu > .asBtn.modified { background:%red; }
+.ormView .orm-menu > .asBtn.modified:hover { background:%green; }
+
+.ormView .orm-tabs {
+    left: 250px; right: 0px;
+}
+
+.ormView .orm-tabs > * {
+    float: left;
+    height: 24px;
+    margin: 16px 0px 0px 0px;
+    padding: 2px 15px;
+    
+    border-right: 1px solid %colDelimLight;
+    background:%colDelim3;
+    color:%white;
+    box-shadow: 0px 0px 0px %black;
+    cursor: pointer;
+}
+
+.ormView .orm-tabs > *:first-child {
+    margin-left: 10px;
+    border-radius: 5px 0px 0px 0px;
+}
+.ormView .orm-tabs > *:last-child {
+    border-radius: 0px 5px 0px 0px;
+    border-right: none;
+}
+
+.ormView .orm-tabs > *:hover,
+.ormView .orm-tabs > *.active {
+    background:%colDelim;
+    box-shadow: 0px 0px 0px %black;
+}
+
+
+.ormView .orm-hist {
+    right: 0px;
+    width: 0px;//-%ormSidebar
+    overflow: auto;
+}
+
+
+
+.ormView .orm-list > *,
+.ormView .orm-hist > *{
+    padding: 0px 10px;
+    cursor: pointer;
+}
+.ormView .orm-list > *:hover,
+.ormView .orm-list > *.active,
+.ormView .orm-hist > *:hover,
+.ormView .orm-hist > *.active{
+    text-decoration: underline;
+}
+
+
+
+
+
+.ormView .orm-cont > * {
+    min-width: 100%; min-height: 100%;
+    padding: 0px;
+    box-sizing: border-box;
+    border: none;
+    resize: none;
+}
+
+
+
+
+
+
+.lineItem { clear: both; }
+.lineItem * { min-width: 20px; min-height: 20px; }
+.lineItem > .key.withBg { background-color: %greyLight; }
+.lineItem { color:%colMain; margin-left: 40px; }
+.lineItem.modified > .key > div:before { content: '*'; color:%red2; }
+.lineItem.ignore { color:%grey;}
+.lineItem > .key { float: left; min-width: 80px; margin-right: 5px; margin-left: 0px; }
+.tree:before,
+.tree:after,
+.list:before,
+.list:after { color:%colMainLight; }
+
+.dataField { float: left; white-space: pre-wrap; word-break: break-word; color:%green; }
+.dataField.string { color:%red; }
+.dataField.string:before, .dataField.string:after { content: '"'; }
+.lineItem.ignore .dataField { color:%grey; }
+
+.tree:before { content: '{'; }
+.tree:after { content: '}'; }
+.list:before { content: '['; }
+.list:after { content: ']'; }
+
+.lineItem.modified > .key > div:before,
+.tree:before,
+.tree:after,
+.list:before,
+.list:after,
+.dataField.string:before,
+.dataField.string:after {
+    display: inline;
+    height: auto;
+    visibility: visible;
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

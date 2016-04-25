@@ -1,0 +1,94 @@
+.jCrop {
+    position: fixed;
+    top: 0px; right: 0px; bottom: 0px; left: 0px;
+    background: %white;
+    box-shadow: -10px -10px 20px #000;
+    z-index: 500;
+}
+
+.jCrop, .jCrop div {
+    box-sizing: initial!important;
+}
+
+.jCropImgBlock, .jCropCanvasBlock, .jCropImg, .jCropPosBlock, .jCropDrag, .jCropSize {
+    position: absolute;
+}
+
+.jCropImgBlock {
+    top: 0px; right: 0px; bottom: 0px; left: 200px;
+    box-shadow: 0px 0px 2px #333;
+    overflow: hidden;
+}
+.jCropCanvasBlock {
+    top: 0px; left: 0px;
+    width: 200px; height:%full;
+    border-right: 1px solid #000;
+    background::g:e;
+}
+.jCropCanvasBlock > h3, .jCropCanvasBlock > div {
+    padding: 10px;
+}
+.jCropCanvasBlock > h3 {
+    font-size: 20px;
+    line-height: 30px;
+}
+.jCropCanvasBlock > input {
+    position: absolute;
+    left: 20px; right: 20px;
+    bottom: 5px;
+    width: 200px;
+    margin: auto;
+}
+.jCropCanvasBlock > input:nth-of-type(1) { bottom: 40px; }
+.jCropCanvasBlock > input:nth-of-type(2) { bottom: 5px; }
+.jCropCanvasBlock > input:nth-of-type(3) { bottom: 75px; }
+.jCropCanvasBlock > canvas {
+    position: absolute;
+    left: 0px; right: 0px;
+    top: 60px; bottom: 60px;
+    margin: auto;
+    box-shadow: 0px 0px 1px #333;
+}
+
+.jCropImg, .jCropPosBlock {
+    top: 0px; right: 0px; bottom: 0px; left: 0px;
+    max-width:%full; max-height:%full;
+}
+
+.jCropImg {
+    margin: auto;
+}
+
+.jCropPosBlock {
+    top: -5000px;
+    left: -5000px;
+    border: 5000px solid rgba(0,0,0,0.75);
+}
+
+.jCropDrag {
+    top: 10px; right: 10px; bottom: 10px; left: 10px;
+    cursor: move;
+}
+.jCropDrag:hover { background: rgba(255,255,255,0.2); }
+
+.jCropSize {
+    width: 10px; height: 10px;
+    border: 5px solid %grey;
+    border-radius: 10px;
+    background: %white;
+    cursor: pointer;
+}
+.jCropSize:hover { border-color: %green; }
+
+.jCropSize:nth-of-type(2) { left: -10px; top: -10px; }
+.jCropSize:nth-of-type(3) { top: -10px; right: -10px; }
+.jCropSize:nth-of-type(4) { right: -10px; bottom: -10px; }
+.jCropSize:nth-of-type(5) { bottom: -10px; left: -10px; }
+
+
+
+
+
+
+
+

@@ -1,0 +1,6 @@
+
+.pr_imgDS > img { opacity: 1.0; }
+
+.pr_imgDS.opaqueImg > img { opacity: 0.0; }
+
+

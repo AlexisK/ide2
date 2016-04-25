@@ -1,0 +1,94 @@
+
+.adminMenu {
+    position: fixed;
+    top: 0px; bottom: 0px; left: 0px;
+    width: 0px;
+    z-index: 400;
+}
+@media (max-width:%wrapperS7) {
+    .adminMenu {
+        display: none;
+    }
+}
+
+.adminMenu svg { fill:%white; }
+
+.adminMenu .fBtn {
+    left: 0px;
+    width: 39px; height: 40px;
+    padding: 10px;
+    background-color:%colDelim2;
+    color:%white;
+    cursor: pointer;
+}
+.adminMenu .fBtn:first-of-type { margin-top: 120px; }
+
+.adminMenu .fBtn.active {
+    width: 70px;
+    padding-left: 40px;
+    background-color:%green;
+}
+.adminMenu .fBtn.active:before {
+    content:'OK';
+    display: block;
+    width: 30px; height: 20px;
+    margin: 0px 0px -20px -30px;
+    line-height: 20px;
+}
+.adminMenu.active .fBtn { margin-left: 170px;}
+
+.adminMenu .openBtn { top: 50px;  }
+.adminMenu .role { top: 100px; width: 70px; cursor: default; }
+
+
+
+
+
+
+.adminMenu .amenu {
+    position: absolute;
+    top: 0px; bottom: 0px; left: -250px;
+    width: 250px;
+    padding: 10px 0px 10px 0px;
+    background-color:%white;
+    color:%colMain;
+    box-shadow: 0px 0px 0px %black, 0px 0px 0px %black;
+    overflow: auto;
+}
+.adminMenu.active .amenu {
+    left: 0px;
+    box-shadow: 0px 0px 30px %black, 0px 0px 15px %black;
+}
+
+
+
+.adminMenu .menus {
+    margin-top: 30px;
+}
+
+.adminMenu h4 {
+    padding: 5px;
+    border-bottom: 1px solid %grey;
+}
+
+
+.adminMenu .asBtn {
+    margin: 0px 5px;
+    padding: 5px;
+    text-align: left;
+    font-size: 14px;
+    color:%grey;
+    border-bottom: 1px solid %greyLight;
+}
+.adminMenu .asBtn:hover,
+.adminMenu .asBtn.active {
+    color:%colMain;
+    border-bottom: 1px dashed %grey;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,121 @@
+
+.wys_inside {
+    position: relative;
+    width: 100%!important; height:auto!important;
+}
+
+.slide-text > .wys_inside {
+    width: 33%!important;
+    float:left;
+}
+
+.wys_inside img {
+    max-width: 100%; height: auto;
+}
+
+
+.wys_inside img[data-imagetype] {
+    border: 1px dashed %grey;
+    cursor: pointer;
+}
+.wys_inside img[data-imagetype]:hover {
+    border-color:%blue;
+}
+.wys_inside pre > img[data-imagetype] { margin: 0px auto;}
+
+
+.wys_inside .pr_gallery {
+    position: relative;
+    margin: 0px 10px 10px 0px;
+    border: 1px dashed %grey;
+    cursor: pointer;
+}
+.wys_inside .pr_gallery:hover {
+    border-color:%blue;
+}
+
+
+
+
+.wys_inside > .editing {
+    position: relative;
+    width:100%; min-width:100%; max-width:100%;
+    padding: 0px;
+    height: auto!important;
+    z-index: 1;
+}
+
+
+
+
+.wys_container {
+    position: absolute;
+    top: 0px;right:0px;left:0px;
+    width: auto!important; height:0px!important;
+    z-index:250;
+}
+.wys_panel {
+    position: absolute;
+    right:0px;bottom:0px;left:0px;
+    width: auto!important; height: 0px!important;
+    overflow: hidden;
+}
+.wys_inside > .wys_container > .wys_panel {
+    background-color:%bgBlack;
+    border: 0px solid %black;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.wys_container.active > .wys_panel { height: 30px!important; }
+.wys_inside > .wys_container.active > .wys_panel { border-width: 1px 1px 0px 1px; }
+
+.wys_panel > .colBlock,
+.wys_panel > .asBtn {
+    float:left;
+    min-width: 30px;height: 0px;
+    overflow: hidden;
+}
+
+.wys_panel > .asBtn {
+    padding: 0px 7px;
+    color:%white;
+    border: 0px dotted transparent;
+    border-width: 0px 1px;
+    font-size: 12px;
+    font-family: monospace;
+    line-height: 20px;
+    background-color:transparent;
+}
+
+.wys_panel > .asBtn svg { fill:%white; }
+
+.wys_container.active > .wys_panel > .colBlock,
+.wys_container.active > .wys_panel > .asBtn { height: 30px; }
+.wys_container.active > .wys_panel > .asBtn { padding: 5px 7px; }
+
+
+
+.wys_panel > .asBtn.b { font-weight: bold; }
+.wys_panel > .asBtn.i { font-style: italic; }
+.wys_panel > .asBtn.h { font-weight: bold; }
+
+.wys_inside .wys_panel > .asBtn:hover,
+.wys_inside .wys_panel > .asBtn.active {
+    //-background-color:%black;
+    border-color:%grey;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

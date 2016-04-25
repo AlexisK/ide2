@@ -1,0 +1,109 @@
+
+
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>IDE2</title>
+    <base href="./">
+    <link rel="stylesheet" media="all" id="locFixCss" href="compiled.css" />
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+    <script>
+        var g_id = 0;
+    </script>
+    <link rel='canonical' class="canonical" href='http://test.com/en/'/>
+</head>
+<body>
+    
+    <div class="workarea">
+        
+        <div class="sidebar pr_tabs pr_maintabs">
+            <div class="mk_tab" data-svg="project">
+                <div class="pr_projects"></div>
+                <hr class="wClear" />
+            </div>
+            <div class="mk_tab" data-svg="tree">
+                <div class="pr_tree">
+                    <div class="mk_support"></div>
+                    <div class="mk_list"></div>
+                </div>
+            </div>
+            <div class="mk_tab" data-svg="mesh">
+                <div class="pr_history"></div>
+                <hr class="wClear" />
+            </div>
+        </div>
+        
+        <div class="editor-block pr_tabs">
+            <div class="mk_tab" data-svg="text">
+                <div class="pr_editor"></div>
+            </div>
+            
+            <div class="mk_tab" data-svg="views">
+                <div class="pr_iframeblock"></div>
+            </div>
+            
+            <!--
+            <div class="mk_tab" data-title="music">
+                <div class=""></div>
+            </div>
+            -->
+            
+            <div class="mk_tab" data-title="regex"> <iframe src="about:blank" data-srcontab="http://www.regextester.com/"></iframe>                     </div>
+            <div class="mk_tab" data-svg="diff">    <iframe src="about:blank" data-srcontab="http://www.danstools.com/diff-compare-merge/"></iframe>    </div>
+            
+            <div class="mk_tab" data-svg="color">   <iframe src="about:blank" data-srcontab="http://www.hexcolortool.com/"></iframe>                    </div>
+            <div class="mk_tab" data-svg="italic">  <iframe src="about:blank" data-srcontab="http://www.cssfontstack.com/"></iframe>                    </div>
+            
+            <div class="mk_tab" data-svg="image">   <iframe src="about:blank" data-srcontab="http://www.favicon-generator.org/image-editor/"></iframe>  </div>
+            <div class="mk_tab" data-svg="sprite">  <iframe src="about:blank" data-srcontab="http://spritegen.website-performance.org/"></iframe>       </div>
+            <div class="mk_tab" data-svg="favicon"> <iframe src="about:blank" data-srcontab="http://www.favicon-generator.org/"></iframe>               </div>
+            
+            <div class="mk_tab" data-svg="speed">   <iframe src="about:blank" data-srcontab="http://www.website-performance.org/"></iframe>             </div>
+            
+            <div class="mk_tab" data-svg="settings">
+                <div class="settings-block fa">
+                    <!--<div>Music</div>
+                    <textarea class="pr_sourcemusic"></textarea>-->
+                    <div>Sources</div>
+                    <textarea class="pr_sources"></textarea>
+                    <div>Engine sources</div>
+                    <textarea class="pr_sourceengine"></textarea>
+                    <div>Font-size</div>
+                    <div class="pr_sett" data-sett="font"></div>
+                    <div>Theme</div>
+                    <div class="pr_sett" data-sett="theme"></div>
+                    <div>Mode</div>
+                    <div class="pr_sett" data-sett="lang"></div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+    
+    
+    <div class="hidden fsMenu pr_fsMenu">
+        <div class="col" style="top:0px;bottom:0px;left:0px;">
+            <div class="pr_history"></div>
+            <hr class="wClear" />
+        </div>
+        
+        <div class="col" style="right:0px;top:0px;bottom:100px;">
+            <div class="pr_tree" data-local="/alxdir/extract/Home/Music" >
+                <div class="mk_support"></div>
+                <div class="mk_list"></div>
+            </div>
+        </div>
+        <div class="col pr_musicplayer"  style="right:0px;bottom:0px;height:100px;"></div>
+    </div>
+    
+    
+    
+    <script src="ace/ace.js" type="text/javascript" charset="utf-8"></script>
+    <script src="ace/ext-language_tools.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" src="compiled.js"></script>
+</body>
+</html>
+

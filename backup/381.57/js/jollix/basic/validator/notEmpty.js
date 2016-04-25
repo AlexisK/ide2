@@ -1,0 +1,2 @@
+
+new eValidator('notEmpty', /[^\s]+/);

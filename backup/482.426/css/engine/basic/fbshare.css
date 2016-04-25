@@ -1,0 +1,90 @@
+.fbshare {
+    position: fixed;
+    right: 20px; bottom: -300px;
+    width: 340px;
+    background-color:#3a5897;
+    color:%white;
+    box-shadow: 1px 1px 2px %black;
+    z-index: 101;
+}
+.fbshare.opened { bottom: 20px; }
+
+.fbshare .heading {
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: 20px 7px;
+}
+
+.fbshare .heading.t2 {
+    height: auto;
+    padding: 20px;
+    border-top: 1px solid %white;
+}
+
+
+
+.fbshare .likeBlock {
+    max-height: 140px;
+    padding: 30px 20px 10px 20px;
+    background-color:%white;
+    overflow: hidden;
+}
+
+.fbshare .ending > a {
+    display: block;
+    padding: 10px 0px;
+    line-height: 20px;
+    font-size: 14px;
+    background-color:%greyLight;
+    color:%black;
+    text-decoration: underline;
+    text-align: center;
+    color:%greyDark;
+}
+.fbshare .ending > a:hover {
+    color:%black;
+}
+
+
+
+
+.fbshare .closeBtn {
+    float: right;
+    width: 40px; height: 40px;
+    padding: 10px;
+}
+
+.fbshare .closeBtn svg { fill:%white; }
+
+
+.fbshare .angDeco {
+    width: 20px; height: 20px;
+    margin: 0px auto -20px 30px;
+}
+.fbshare .angDeco svg { fill:#3a5897;}
+
+
+
+
+@media (max-width:%wrapperS7) {
+    .fbshare .heading.t2 {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width:%wrapperS8) {
+    .fbshare {
+        width: auto;
+        right: 0px; left: 0px;
+    }
+    .fbshare.opened { bottom: 0px; }
+}
+
+
+
+
+
+
+
+

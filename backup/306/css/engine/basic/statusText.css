@@ -1,0 +1,48 @@
+
+.statusText {
+    background-color:%bgBlack2;
+    font-size: 12px;
+    color:%white;
+    border: none;
+    box-shadow: 0px 0px 1px %black;
+}
+
+.statusText > div > p {
+    float: none;
+    margin: 0px!important;
+    padding: 5px 26px;
+    color:%black;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+
+.statusText > div.type_title   > p { background-color:%greyLight; font-size:14px; }
+.statusText.popBlock .type_title   { display: none; }
+
+.statusText > div.type_link    > p { background-color:%blue; color:%white; }
+.statusText > div.type_info    > p { background-color:%green; }
+.statusText > div.type_warning > p { background-color:%warn; }
+.statusText > div.type_error   > p { background-color:%red3; }
+.statusText > div.type_fatal   > p { background-color:%red2; color:%white; }
+
+
+
+.statusText > div > ol {
+    padding: 5px 26px;
+    list-style-type: initial;
+    margin: 0px;
+}
+
+.statusText > div > ol a { text-decoration: underline; cursor: pointer; }
+.statusText > div > ol a:hover { text-shadow: 0px 0px 1px %white; color:%white; }
+
+.statusText.popBlock {
+    position: fixed;
+    width: 220px;
+    z-index: 1000;
+}
+
+.statusText .calendar td { height: 22px; }

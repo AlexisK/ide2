@@ -1,0 +1,46 @@
+.menu3col > * { position: absolute; }
+
+.menu3col .data-select {
+    top: 0px; bottom: 0px; left: 0px;
+    width: 250px;
+    overflow: auto;
+}
+.menu3col .data-select.t2 { left: 250px;}
+.menu3col .data-editarea {
+    top: 0px; right: 0px; bottom: 0px; left: 500px;
+}
+
+.menu3col .data-select .ps-item { padding: 5px; }
+
+.menu3col .data-select .ps-item .title {
+    border-bottom: 1px solid %grey;
+}
+
+.menu3col .data-select .cur-item {
+    padding-left: 10px;
+    cursor: pointer;
+}
+.menu3col .data-select .cur-item:hover,
+.menu3col .data-select .cur-item.active { background-color: %greyLight; }
+
+.menu3col .data-editarea {
+    padding: 5px 20px;
+    overflow: auto;
+}
+
+.menu3col input {
+    border: none;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+

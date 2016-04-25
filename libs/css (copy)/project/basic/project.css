@@ -1,0 +1,93 @@
+
+#def projSX 110px
+#def projSImg 20px
+
+.proj2 {
+    position: relative;
+    width:%projSX;
+    float: left;
+    
+}
+.proj2 svg { fill:%greyDark; }
+
+.proj2.active svg { fill:%white; }
+
+
+
+.proj2 > .logo {
+    width:%projSImg; height:%projSImg;
+    margin: 5px auto 5px 5px;
+}
+
+.proj2 > .title {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+
+
+.proj2 > .conts {
+    position: absolute;
+    top: 5px; right: 5px;
+}
+
+
+.proj2 > .conts > .as_btn {
+    width: 20px; height: 20px;
+    padding: 2px;
+    cursor: pointer;
+}
+
+
+
+.proj2.active,
+.proj2 > .title:hover,
+.proj2 > .conts > .as_btn:hover {
+    background-color:%greyDark;
+    color:%white;
+}
+
+.proj2.active svg,
+.proj2.active > .conts > .as_btn svg,
+.proj2 > .conts > .as_btn:hover svg { fill:%white; }
+
+
+
+.proj { position: relative; min-height: 20px; cursor: pointer; }
+.proj svg { fill:%greyDark; }
+.proj > .logo {
+    width: 20px; height: 20px;
+    padding: 2px;
+    float: left;
+}
+.proj > .title {  min-height: 20px; line-height: 20px; margin-left 0px; padding: 0px; cursor: pointer; }
+.proj > .title:hover,
+.proj.active > .title { background-color:%white; }
+.proj > .conts { display: none; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

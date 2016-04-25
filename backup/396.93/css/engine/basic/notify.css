@@ -1,0 +1,46 @@
+.notify-area {
+    position: fixed;
+    right: 0px; bottom: 0px;
+    width: 0px;
+    z-index:200;
+}
+
+
+.notify-area > .notify {
+    float: right;
+    width: 200px;
+    margin: 0px -1px -1px 0px;
+    padding: 5px 20px;
+    background-color:%bgGrey;
+    color:%black;
+    border: 1px solid %bgBlack3;
+    font-size: 14px;
+    opacity: 0.75;
+}
+.notify-area > .notify:last-child {
+    padding: 5px 20px;
+    opacity: 1.0;
+}
+
+.notify-area > .notify.closed {
+    margin-right: -220px;
+    padding: 0px 10px;
+}
+
+.notify-area > .notify.black {
+    background-color:%bgBlack2;
+    color:%white;
+}
+
+.notify-area > .notify.ok,
+.notify-area > .notify.green {
+    background-color:%green2;
+}
+
+.notify-area > .notify.fail,
+.notify-area > .notify.red {
+    background-color:%red3;
+}
+.notify-area > .notify.warning {
+    background-color:%warn;
+}

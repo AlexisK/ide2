@@ -1,0 +1,232 @@
+
+.langMenu {
+    position: fixed;
+    top: 0px; right: 0px; bottom: 0px; left: 70px;
+    background:%white;
+    
+    font-size: 14px;
+    line-height: 20px;
+    font-family: monospace;
+    
+    box-shadow: -20px 0px 100px %black;
+}
+.windowBlock > .langMenu { position: initial; }
+.langMenu > * { position: absolute; }
+
+.langMenu > .langButtons {
+    top: 0px; right: 0px; bottom: 0px;
+    width: 60px;
+    background-color:%colMain;
+    color:%white;
+    overflow: auto;
+}
+
+.langMenu.noLang > .langButtons {
+    z-index: 2;
+    overflow: visible;
+    width: 0px;
+    right: 0px;
+}
+
+
+
+.langMenu > .langButtons > * { padding: 10px 0px; text-transform: uppercase; }
+.langMenu > .langButtons > .final {
+    position: absolute;
+    right: 0px; bottom: 0px; left: 0px;
+    background-color:%green;
+}
+.langMenu > .langButtons > *:hover,
+.langMenu > .langButtons > *.active { background-color:%blue; color:%white; }
+
+.langMenu.noLang > .langButtons > * { display: none; }
+.langMenu.noLang > .langButtons > .final {
+    display: block;
+    left: initial;
+    width: 60px;
+}
+
+
+.langMenu > .cont {
+    top:0px; right:60px; bottom:0px; left:0px;
+    overflow: auto;
+    box-shadow: 0px 0px 20px %black;
+}
+
+.langMenu.noLang > .cont {
+    right: 0px;
+}
+
+
+
+.langMenu > .cont h4 {
+    margin: 30px 0px 10px 0px;
+}
+.langMenu > .cont h5 {
+    margin: 10px 0px;
+    border-bottom: 1px dotted %grey;
+}
+.langMenu > .cont .group {
+    margin-left: 20px;
+}
+
+
+
+.langMenu .cont > .asBtn {
+    margin-top: 20px;
+    padding: 10px 0px;
+    background-color:%greyLight;
+}
+
+.langMenu .cont > .asBtn:hover {
+    background-color:%colMain;
+    color:%greyLight;
+}
+
+
+
+
+
+
+.langMenu.compact {
+    left: initial;
+    width: 350px;
+}
+
+.langMenu.compact > .cont {
+    padding: 20px;
+    background:%greyLight2;
+}
+
+.langMenu.compact > .cont .jTagline > .inp {
+    margin: 3px;
+    line-height: 20px;
+}
+.langMenu.compact > .cont .jTagline > .tagb {
+    background-color:%blue;
+    color:%white;
+    fill:%white;
+    line-height: 20px;
+    margin: 3px;
+    padding: 0px 20px 0px 4px;
+    border-radius: 2px;
+}
+.langMenu.compact > .cont .jTagline > .tagb > .cbtn {
+    top: 4px; right: 4px; bottom: 4px;
+    width: 12px;
+    line-height: 12px;
+}
+
+
+.langMenu.compact > .cont div > h3 {
+    margin-top: 20px;
+}
+
+.langMenu.compact > .cont input,
+.langMenu.compact > .cont textarea,
+.langMenu.compact > .cont .jTagline {
+    width: 100%;
+    border-radius: 4px;
+    background-color:%white;
+}
+.langMenu.compact > .cont .line.oneline input,
+.langMenu.compact > .cont .line.oneline textarea,
+.langMenu.compact > .cont .line.oneline .jTagline {
+    width: auto;
+}
+.langMenu.compact > .cont .line.oneline.wide input,
+.langMenu.compact > .cont .line.oneline.wide textarea,
+.langMenu.compact > .cont .line.oneline.wide .jTagline {
+    width: calc(100% - 150px);
+    margin-right: 0px;
+}
+.langMenu.compact > .cont textarea { min-height: 100px; }
+.langMenu.compact > .cont h2 { margin-bottom: 20px; }
+
+
+.langMenu.compact .line {
+    min-height: 26px;
+    margin-bottom: 5px;
+}
+.langMenu.compact .line.oneline > * { 
+    float: left;
+    margin-right: 10px;
+}
+
+.langMenu.compact .line > *:last-child {
+    display: block;
+    float: none;
+    margin-left: 160px;
+}
+
+.langMenu.compact .line > .editors + * { margin-left: 250px; }
+
+.langMenu.compact .line > .key { line-height: 26px; }
+.langMenu.compact .line.oneline > .key { min-width: 140px; }
+
+.langMenu.compact .line > .editors { width: 90px; }
+.langMenu.compact .line > .editors > * {
+    display: block;
+    float: left;
+    width: 30px; height: 30px;
+    padding: 5px;
+}
+.langMenu.compact .line > .editors span { display: none; }
+
+.langMenu .dictCont .line {
+    width: calc(50% - 10px);
+    margin-left: 10px;
+    float: left;
+}
+.langMenu .dictCont .line > .key {
+    width: 80px;
+}
+
+.langMenu.compact .line > .info {
+//-    float: none;
+    background-color:%red;
+    color:%white;
+    line-height: 26px;
+    padding: 0px 10px;
+    text-transform: uppercase;
+    border-radius: 4px;
+}
+
+.langMenu.compact .dictCont input,
+.langMenu.compact .dictCont textarea {
+    width: calc(100% - 160px); max-width: calc(100% - 160px);
+    margin-bottom: 10px;
+    
+}
+
+
+
+
+.langMenu input,
+.langMenu textarea {
+    min-height: 26px;
+    padding: 4px 5px;
+    border: 1px solid %greyLight;
+}
+
+.langMenu .calendar-input {
+    margin-bottom: 40px;
+    z-index: 1;
+}
+
+
+.langMenu .wys_inside {
+    margin-left: 0px!important;
+//-    padding-top: 40px;
+    background-color:%white;
+}
+
+
+
+
+
+
+
+
+
+

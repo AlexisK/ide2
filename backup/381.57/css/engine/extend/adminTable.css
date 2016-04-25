@@ -1,0 +1,248 @@
+
+.popTable {
+    position: fixed;
+    top: 0px; right: 0px; bottom: 0px; left: %sizeMLine;
+    background-color:%white;
+    overflow: auto;
+}
+
+
+
+
+.adminTable {
+    width: 100%; height: 100%;
+    font-size: 12px;
+    border-collapse: collapse;
+    border-spacing: 0px;
+}
+
+.adminTable > thead { height: 35px; }
+.adminTable > tbody { overflow-x: initial; overflow-y: auto; }
+
+.adminTable .jDropdown {
+    min-width: 80px;
+}
+.adminTable .jDropdown,
+.adminTable .jDropdown > .jHead {
+    min-height: 20px;
+    line-height: 20px;
+}
+
+
+
+
+.adminTable td {
+    padding: 1px 5px;
+    border: 1px solid %greyLight;
+    //-text-align: center;
+    font-family: monospace;
+}
+.adminTable td.chb { width: 40px; }
+
+.adminTable th {
+    min-width: 30px;
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    background-size: 20px 20px;
+    cursor: pointer;
+}
+
+.adminTable td > * {
+    margin: 2px 0px 2px 2px;
+}
+
+
+.adminTable th,
+.adminTable td.manage {
+    background-color:%greyLight;
+    border: 1px solid %grey;
+}
+
+.adminTable th > *,
+.adminTable td.manage > * {
+    margin: 1px 0px 1px 1px;
+}
+
+.adminTable th.f_id {
+    width: 40px;
+}
+
+
+.adminTable .green { background-color:%green2; }
+.adminTable .green td { border-color:%green; color:%black; }
+
+.adminTable .blue { background-color:%blue2; }
+.adminTable .blue td { border-color:%blue; color:%black; }
+
+.adminTable .warning { background-color:%warn; }
+.adminTable .warning td { border-color:%red; color:%black; }
+
+.adminTable .red { background-color:%red3; }
+.adminTable .red td { border-color:%red; color:%black; }
+
+.adminTable .fatal { background-color:%red2; }
+.adminTable .fatal td { border-color:%red; color:%black; }
+
+
+
+
+.adminTable .manage .asBtn > span {
+    display: none;
+}
+.adminTable .manage .asBtn:after {
+    content:'';
+}
+
+.adminTable .manage {
+    min-width: 43px;
+    padding: 1px;
+}
+.adminTable .manage > .asBtn {
+    width: 20px; height: 20px;
+    float: left;
+    padding: 2px;
+    background-color:%grey;
+}
+.adminTable .manage .asBtn:hover {
+    background-color:%colMain;
+}
+.adminTable .manage .asBtn > .svg {
+    fill:%white;
+}
+
+
+.adminTable input {
+    width: 100%;
+    border: none;
+    margin: 0px;
+}
+
+
+
+.atHead {
+    position: fixed;
+    top: 0px; right: 0px; left: 0px;
+    height: 30px;
+    text-align: center;
+    background-color:%white;
+    z-index: 10;
+}
+
+.atHead .pageCont {
+    display: inline-block;
+    margin: 0px 30px;
+}
+
+.atHead .pageCont > * {
+    display: inline-block;
+    height: 30px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.atHead .pageCont > *.active {
+    background-color:%grey;
+    color:%white;
+}
+.atHead .pageCont > *:hover {
+    background-color:%greyDark;
+    color:%white;
+}
+
+.atHead .arr {
+    display: inline-block;
+    width: 60px; height: 20px;
+    line-height: 20px;
+    margin: 5px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+}
+
+.atHead .arr.prev {
+    padding-left: 25px;
+    background-position: 0% 50%;
+}
+
+.atHead .arr.next {
+    padding-right: 25px;
+    background-position: 100% 50%;
+}
+
+
+.atHead + .adminTableBlock { margin-top: 30px; }
+
+.atHead .timeRange { float: right; }
+.atHead .timeRange,
+.atHead .timeRange > * { display: inline-block; }
+
+
+.atHead .clearFilter { margin-left: %sizeMLine; padding: 5px; }
+.atHead .clearFilter > .sel { float: left; }
+.atHead .clearFilter > .sel + * { margin-left: 45px; }
+
+
+
+
+
+
+
+.adminTable .rng { min-width: 100px; }
+
+.adminTable .rng.time {
+    position: relative;
+}
+
+.adminTable .rng.time > div {
+    height: 26px;
+    line-height: 26px;
+    background-color:%white;
+}
+
+
+
+
+
+
+.adminTable .filters th {
+    vertical-align: top;
+    text-align: center;
+}
+
+
+.adminTable .filters input {
+    height: 26px;
+    padding: 2px 4px;
+}
+
+.adminTable .filters input:valid,
+.adminTable .filters .selected > .jHead {
+    background-color:%red;
+    color:%white;
+}
+
+
+.exch-table-filt-item {
+    min-height: 20px;
+    padding: 0px 10px!important;
+    color:%white;
+    background-color:%green;
+}
+
+.exch-table-filt-item.off {
+    background-color:%red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
